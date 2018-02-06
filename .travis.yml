@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "node"
+cache:
+  directories:
+    - "node_modules"
+before_script:
+  - npm install -g webpack
+script: npm run build
+deploy:
+  fqdn: beta.hacksurrey.uk
+  provider: pages
+  local-dir: public
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
