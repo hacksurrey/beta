@@ -1,9 +1,12 @@
+import Styling from '../stylesheets/base.scss'
+
 import Vue from 'vue'
 
 /*
  * Use any Vue Plugins here
  */
-// ...
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 
 /*
  * Our main Application component which we will use to render the page

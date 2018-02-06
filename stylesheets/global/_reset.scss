@@ -1,0 +1,22 @@
+@import "~normalize.css/normalize";
+
+article, aside, figcaption, figure, footer, header, nav, section {
+    display: block;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+p, figure {
+    margin: 1em 0;
+}
+
+a img {
+    border: none;
+}
+
+sup, sub {
+    line-height: 0;
+}

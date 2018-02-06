@@ -1,11 +1,12 @@
 var path = require('path')
 var webpack = require('webpack')
 
+
 module.exports = {
   entry: './app/application.js',
   output: {
-    path: path.resolve(__dirname, './public'),
-    filename: 'build.js'
+    path: path.resolve(__dirname, './public/javascript'),
+    filename: 'application.js'
   },
   module: {
     rules: [
@@ -53,25 +54,49 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        include: [path.resolve(''), path.resolve('node_modules/vue-particles')]
+      },
+      // {
+      //   test: /\.(png|jpg|gif)$/,
+      //   loaders: [
+      //     'url-loader',
+      //     'img-loader'
+      //   ],
+      //   options: {
+      //     limit: 10 * 1024
+      //   }
+      // },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loaders: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[name].[ext]?[hash]'
+            }
+          },
+          'img-loader'
+        ]
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
+        test: /\.svg$/,
+        loader: 'svg-url-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          limit: 10 * 1024,
+          noquotes: true
         }
       }
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      'resources': path.resolve('resources')
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.resolve("public"),
     historyApiFallback: true,
     noInfo: true,
     overlay: true
@@ -84,7 +109,6 @@ module.exports = {
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
-  // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
