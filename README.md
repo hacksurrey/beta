@@ -10,10 +10,10 @@
 ---
 
 ## Introduction
-Before playing around with this website you need to understand how everything fits together. The website itself is a single Vue application. The Vue application is loaded in the `app\application.js` file and the `app\Application.vue` component is used to render the application. Weback is used to bundle everything together (the how is defined in the `webpack.config.js` file) as well as to create a development server with livereload (using the `npm run dev` command). Deployment is very simple: everything inside the `public` folder after `npm run prod` has been executed needs to be published. In our case, this is done by using TravisCI and Github Pages.
+Before playing around with this website you need to understand how everything fits together. The website itself is a single Vue application. The Vue application is loaded in the `app\application.js` file and the `app\Application.vue` component is used to render the application. Weback is used to bundle everything together (the how is defined in the `webpack.config.js` file) as well as to create a development server with livereload (using the `npm run dev` command). Deployment is very simple: everything inside the `public` folder after `npm run build` has been executed needs to be published. In our case, this is done by using TravisCI and Github Pages.
 
 ## Serving Files Locally (during Development)
-1. Clone this repository using git: 
+1. Clone this repository using git:
    ```
    $ git clone https://github.com/hacksurrey/beta.git
    ```

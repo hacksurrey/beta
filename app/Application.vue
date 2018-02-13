@@ -4,12 +4,16 @@
       <a class="scroller" v-scroll-to="'#faq-section'"><i class="material-icons">keyboard_arrow_down</i></a>
     </hero>
     <faq id="faq-section"></faq>
+    <team />
+    <sponsors />
   </div>
 </template>
 
 <script>
 import Hero from '../components/Hero.vue'
 import Faq from '../components/Faq.vue'
+import Team from '../components/Team.vue'
+import Sponsors from '../components/Sponsors.vue'
 
 export default {
   name: 'app',
@@ -23,7 +27,9 @@ export default {
   },
   components: {
     hero: Hero,
-    faq: Faq
+    faq: Faq,
+    team: Team,
+    sponsors: Sponsors,
   }
 }
 </script>

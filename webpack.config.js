@@ -60,28 +60,25 @@ module.exports = {
         loader: 'babel-loader',
         include: [path.resolve(''), path.resolve('node_modules/vue-particles')]
       },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10 * 1024
+        }
+      },
       // {
       //   test: /\.(png|jpg|gif)$/,
       //   loaders: [
-      //     'url-loader',
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: 'images/[name].[ext]?[hash]'
+      //       }
+      //     },
       //     'img-loader'
-      //   ],
-      //   options: {
-      //     limit: 10 * 1024
-      //   }
+      //   ]
       // },
-      {
-        test: /\.(png|jpg|gif)$/,
-        loaders: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: 'images/[name].[ext]?[hash]'
-            }
-          },
-          'img-loader'
-        ]
-      },
       {
         test: /\.svg$/,
         loader: 'svg-url-loader',

@@ -7,13 +7,13 @@
     </header>
 
     <slot/>
-    <vue-particles class="background" color="#FF3232" :particleOpacity="0.35" :particlesNumber="125" shapeType="circle" :particleSize="2"
-    linesColor="#FF3232" :linesWidth="0.2" :lineLinked="true" :lineOpacity="0.35" :linesDistance="75"
+    <vue-particles class="background" color="#FF3232" :particleOpacity="0.75" :particlesNumber="125" shapeType="circle" :particleSize="2"
+    linesColor="#FF3232" :linesWidth="0.55" :lineLinked="true" :lineOpacity="0.75" :linesDistance="75"
     :moveSpeed="3" :hoverEffect="false" :clickEffect="false" />
   </section>
 </template>
 
-<script scoped>
+<script>
 export default {
   props: {
     date: {
@@ -35,7 +35,7 @@ section
   align-items: center
   vertical-align: bottom
   justify-content: center
-  background-color: #111116
+  background-color: #fcfcfc
 
 .background
   z-index: 0

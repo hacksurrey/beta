@@ -4,15 +4,26 @@
       <div class="item">
         <h1>FAQ.</h1>
       </div>
+
       <div class="item" v-for="i in faqs">
         <h3>{{ i.question }}</h3>
         <p v-html="i.answer" />
+      </div>
+
+      <div class="item">
+        <h3>Got anything else?</h3>
+        <p>
+          Contact us by <a href="mailto:contact@hacksurrey.uk">email</a>,
+          ping us on <a href="https://facebook.com/hacksurrey">Facebook</a>,
+          or shoot us a <a href="https://twitter.com/hacksurrey">tweet</a>.
+          We'll get back to you as soon as possible!
+        </p>
       </div>
     </div>
   </section>
 </template>
 
-<script scoped>
+<script>
 export default {
   data() {
     return {
@@ -24,17 +35,16 @@ export default {
           {question: 'What should I bring?', answer: 'You should bring your laptop, charger, and phone. You must not forget to bring your <strong>student ID</strong>, and lots of motivation.'},
           {question: 'What about non-UK ?', answer: 'You are still more than welcome to join us! However, you should know that we do not offer travel reimbursements.'},
           {question: 'How can I help?', answer: `<a href="#">Be a Volunteer!</a> Volunteers can still participate and will receive extra goodies in exchange for their effort.`},
-          {question: 'Got anything else?', answer: `Contact us by <a href="mailto:contact@hacksurrey.uk">email</a>, ping us on <a href="https://facebook.com/hacksurrey">Facebook</a>, or shoot us a <a href="https://twitter.com/hacksurrey">tweet</a>. We'll get back to you as soon as possible!`},
         ]
     }
   }
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 section
   display: flex
-  padding: 3em 12em
+  padding: 1.5em 12em
   flex-direction: column
   background-color: #fcfcfc
 
