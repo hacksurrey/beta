@@ -7,6 +7,8 @@ cache:
 before_script:
   - npm install -g webpack
 script: npm run build
+before_deploy:
+  - git add -f public/resources/*
 deploy:
   fqdn: beta.hacksurrey.uk
   provider: pages

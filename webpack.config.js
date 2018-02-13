@@ -3,10 +3,14 @@ var webpack = require('webpack')
 
 
 module.exports = {
-  entry: './app/application.js',
+  entry: {
+    application: './app/application.js',
+    styling: './stylesheets/base.scss'
+  },
   output: {
-    path: path.resolve(__dirname, './public/javascript'),
-    filename: 'application.js'
+    path: path.resolve(__dirname, './public/resources'),
+    publicPath: '/resources/',
+    filename: '[name].js'
   },
   module: {
     rules: [

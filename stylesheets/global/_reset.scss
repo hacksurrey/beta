@@ -1,22 +1,33 @@
 @import "~normalize.css/normalize";
 
+* {
+  z-index: 1;
+}
+
+* , *:before, *:after{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+}
+
 article, aside, figcaption, figure, footer, header, nav, section {
-    display: block;
+  display: block;
 }
 
 ul, ol {
-    margin: 1em 0;
-    padding-left: 40px;
+  margin: 1em 0;
+  padding-left: 40px;
 }
 
 p, figure {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 a img {
-    border: none;
+  border: none;
 }
 
 sup, sub {
-    line-height: 0;
+  line-height: 0;
 }

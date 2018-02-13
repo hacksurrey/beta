@@ -1,0 +1,19 @@
+@import "~animate.css/animate";
+
+@keyframes pulse {
+    from {
+        filter: alpha(opacity=40);
+        opacity: .4;
+        top: 0;
+    }
+    50% {
+        filter: none;
+        opacity: 1;
+        top: -10px;
+    }
+    to {
+        filter: alpha(opacity=40);
+        opacity: .4;
+        top: 0;
+    }
+}

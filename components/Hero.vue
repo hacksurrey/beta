@@ -6,9 +6,10 @@
       <h1>{{ location }}</h1>
     </header>
 
-    <vue-particles class="background" color="#FF3232" :particleOpacity="1" :particlesNumber="100" shapeType="circle" :particleSize="2"
-    linesColor="#FF3232" :linesWidth="0.5" :lineLinked="true" :lineOpacity="1" :linesDistance="100"
-      :moveSpeed="2" :hoverEffect="true" hoverMode="grab" :clickEffect="false" />
+    <slot/>
+    <vue-particles class="background" color="#FF3232" :particleOpacity="0.35" :particlesNumber="125" shapeType="circle" :particleSize="2"
+    linesColor="#FF3232" :linesWidth="0.2" :lineLinked="true" :lineOpacity="0.35" :linesDistance="75"
+    :moveSpeed="3" :hoverEffect="false" :clickEffect="false" />
   </section>
 </template>
 
@@ -25,36 +26,40 @@ export default {
 }
 </script>
 
-<style lang="scss">
-section {
-  background-color: #111116;
-  display: flex;
-  vertical-align: bottom;
-  width: 100vw;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
+<style lang="sass" scoped>
+section
+  width: 100vw
+  display: flex
+  max-width: 100%
+  min-height: 100vh
+  align-items: center
+  vertical-align: bottom
+  justify-content: center
+  background-color: #111116
 
-.background {
-  width: 100%;
-  position: fixed;
-  min-height: 100%;
-}
+.background
+  z-index: 0
+  width: 100%
+  min-height: 100%
+  max-height: 100vh
+  position: absolute
 
-h1 {
-  margin: 0;
-  color: #FF3232;
-  display: block;
-  line-height: 1;
-  font-weight: 300;
-  text-align: center;
-}
+h1
+  margin: 0
+  color: #FF3232
+  display: block
+  line-height: 1
+  font-weight: 300
+  text-align: center
 
-img {
-  width: 42vw;
-  min-width: 400px;
-  max-width: 850px;
-  margin-bottom: 20px;
-}
+img
+  width: 42vw
+  min-width: 400px
+  max-width: 850px
+  margin-bottom: 20px
+</style>
+
+<style lang="sass">
+.particles-js-canvas-el
+  height:100vh !important
 </style>
