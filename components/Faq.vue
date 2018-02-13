@@ -46,7 +46,6 @@ section
   display: flex
   padding: 1.5em 12em
   flex-direction: column
-  background-color: #fcfcfc
 
 .container
   display: flex

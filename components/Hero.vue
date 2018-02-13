@@ -35,7 +35,6 @@ section
   align-items: center
   vertical-align: bottom
   justify-content: center
-  background-color: #fcfcfc
 
 .background
   z-index: 0

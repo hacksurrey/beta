@@ -32,7 +32,6 @@ section
   display: flex
   padding: 1.5em 12em
   flex-direction: row
-  background-color: #fcfcfc
   flex-wrap: wrap
   justify-content: center
 
@@ -60,7 +59,8 @@ section
     margin: 0
     width: 150px
   .subtitle
-    color: #fcfcfc
+    padding: .35em
+    color: #ffffff
     font-weight: 300
     font-size: 1.25em
     background-color: #111116

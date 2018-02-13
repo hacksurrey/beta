@@ -18,10 +18,9 @@ export default {
 <style lang="sass" scoped>
 section
   display: flex
+  flex-wrap: wrap
   padding: 1.5em 12em
   flex-direction: column
-  background-color: #fcfcfc
-  flex-wrap: wrap
   justify-content: space-around
 
 .item
