@@ -34,7 +34,7 @@ export default {
           {question: `What if I can't code?`, answer: `Not a problem! Regardless of what you think of your technical ability, this will be a great opportunity to learn some new skills!`},
           {question: 'What should I bring?', answer: 'You should bring your laptop, charger, and phone. You must not forget to bring your <strong>student ID</strong>, and lots of motivation.'},
           {question: 'What about non-UK ?', answer: 'You are still more than welcome to join us! However, you should know that we do not offer travel reimbursements.'},
-          {question: 'How can I help?', answer: `<a href="#">Be a Volunteer!</a> Volunteers can still participate and will receive extra goodies in exchange for their effort.`},
+          {question: 'How can I help?', answer: `<a href="mailto:contact@hacksurrey.uk">Be a Volunteer!</a> Volunteers can still participate and will receive extra goodies in exchange for their effort.`},
         ]
     }
   }

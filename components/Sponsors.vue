@@ -42,7 +42,8 @@ section
   height: 7em
   justify-content: center
   img
-    width: 40%
+    padding: 0 1.5em
+    height: 100%
 
 .item:last-child
   text-align: center

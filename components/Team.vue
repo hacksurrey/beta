@@ -19,6 +19,10 @@
       <img src="~resources/avatars/rishi.jpg" />
       <span class="subtitle">Rishi</span>
     </div>
+    <div class="item">
+      <img src="~resources/avatars/default.jpg" />
+      <span class="subtitle"><a href="mailto:contact@hacksurrey.uk">You?</a></span>
+    </div>
   </section>
 </template>
 
@@ -51,17 +55,23 @@ section
     margin: 0 0 5px 0
 
 .item:not(:first-child)
-  margin: 0 1px
   display: flex
-  flex-direction: column
+  margin: 0 3px
+  padding: .5em 0
   text-align: center
+  flex-direction: column
   img
     margin: 0
     width: 150px
   .subtitle
     padding: .35em
-    color: #ffffff
+    color: #fcfcfc
     font-weight: 300
     font-size: 1.25em
-    background-color: #111116
+    background-color: #303036
+    a
+      color: #fcfcfc
+.item:last-child
+  .subtitle:last-child
+    background-color: #FF3232
 </style>

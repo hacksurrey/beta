@@ -12,6 +12,7 @@
     "vue-scrollto": "^2.8.0"
   },
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -24,6 +25,7 @@
     "image-webpack-loader": "^4.0.0",
     "img-loader": "^2.0.1",
     "node-sass": "^4.5.3",
+    "postcss-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
     "svg-url-loader": "^2.3.1",
     "url-loader": "^0.6.2",
