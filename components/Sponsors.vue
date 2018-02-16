@@ -4,8 +4,14 @@
       <h1>Partners.</h1>
     </div>
     <div class="item">
-      <img src="~resources/sponsors/github.svg" />
-      <img src="~resources/sponsors/union.svg" />
+      <a href="https://github.com/">
+        <img src="~resources/sponsors/github.svg" />
+      </a>
+    </div>
+    <div class="item">
+      <a href="https://ussu.co.uk/">
+        <img src="~resources/sponsors/union.svg" />
+      </a>
     </div>
   </section>
 </template>
@@ -20,17 +26,16 @@ section
   display: flex
   flex-wrap: wrap
   padding: 1.5em 12em
-  flex-direction: column
-  justify-content: space-around
+  flex-direction: row
+  justify-content: center
 
 .item
-  margin: .5em
+  margin: .5em .75em
   display: flex
-  flex: 1 1 auto
-  min-width: 300px
-  flex-basis: 25%
+  // flex: 1 1 auto
+  // min-width: 300px
+  // flex-basis: 25%
   border-radius: 2px
-  padding: .5em 1.5em
   h1
     padding: 0
     color: #FF3232
@@ -38,12 +43,13 @@ section
     font-weight: 500
     margin: 0 0 5px 0
 
+.item:first-child
+  flex-basis: 100%
+
 .item:not(:first-child)
-  height: 7em
-  justify-content: center
+  height: 5em
   img
-    padding: 0 1.5em
-    height: 100%
+    max-height: 65px
 
 .item:last-child
   text-align: center
