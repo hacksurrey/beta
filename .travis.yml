@@ -10,6 +10,8 @@ script: npm run build
 before_deploy:
   - git add -f public/resources/*
 deploy:
+  edge:
+    branch: v1.8.47
   fqdn: beta.hacksurrey.uk
   provider: pages
   local-dir: public

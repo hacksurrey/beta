@@ -12,16 +12,12 @@
       <span class="subtitle">Dan</span>
     </div>
     <div class="item">
-      <img src="~resources/avatars/hannah.jpg" />
-      <span class="subtitle">Hannah</span>
-    </div>
-    <div class="item">
       <img src="~resources/avatars/rishi.jpg" />
       <span class="subtitle">Rishi</span>
     </div>
     <div class="item">
-      <img src="~resources/avatars/default.jpg" />
-      <span class="subtitle"><a href="mailto:contact@hacksurrey.uk">You?</a></span>
+      <img src="~resources/avatars/hannah.jpg" />
+      <span class="subtitle">Hannah</span>
     </div>
   </section>
 </template>
@@ -71,7 +67,4 @@ section
     background-color: #303036
     a
       color: #fcfcfc
-.item:last-child
-  .subtitle:last-child
-    background-color: #FF3232
 </style>

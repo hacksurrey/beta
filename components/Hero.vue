@@ -4,7 +4,7 @@
       <img src="~resources/logo.svg" />
       <h1>{{ date }}</h1>
       <h1>{{ location }}</h1>
-      <h1><a class="button" href="https://hacksurrey.typeform.com/to/KvSJZQ">Pre-registration now open!</a></h1>
+      <h1><a class="button" href="https://ti.to/hacksurrey/beta/">Get your free ticket here</a></h1>
     </header>
 
     <slot/>
