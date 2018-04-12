@@ -28,7 +28,7 @@ export default {
   data() {
     return {
         faqs: [
-          {question: 'What exactly is this?', answer: 'HackSurrey Beta is a Hackathon at the University of Surrey: 150 students, 24 hours, what will <b>you</b> build?'},
+          {question: 'What exactly is this?', answer: 'HackSurrey Beta is a Hackathon at the University of Surrey: 100 students, 24 hours, what will <b>you</b> build?'},
           {question: 'Are tickets free?', answer: `Of course they are! Thanks to our lovely sponsors, HackSurrey Beta tickets are absolutely free!`},
           {question: 'But when and where?', answer: 'HackSurrey Beta will take place on the 5th and 6th of May 2018 at the University of Surrey in Guildford (Austin Pearce Building).'},
           {question: `What if I can't code?`, answer: `Not a problem! Regardless of what you think of your technical ability, this will be a great opportunity to learn some new skills!`},
