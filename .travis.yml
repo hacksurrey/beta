@@ -10,8 +10,6 @@ script: npm run build
 before_deploy:
   - git add -f public/resources/*
 deploy:
-  edge:
-    branch: pages-ivar-set
   fqdn: beta.hacksurrey.uk
   provider: pages
   local-dir: public
