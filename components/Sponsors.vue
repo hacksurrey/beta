@@ -15,24 +15,38 @@
       <a class="logo" href="https://www.accenture.com/gb-en/">
         <img src="~resources/sponsors/accenture.svg" />
       </a>
+      <a class="logo" href="http://www.goldmansachs.com/">
+        <img src="~resources/sponsors/goldman.svg" />
+      </a>
     </div>
     <div class="row">
       <h1 class="title">Supporters.</h1>
     </div>
     <div class="row center">
-      <a class="logo" href="https://digitalocean.com/">
-        <img src="~resources/sponsors/digitalocean.svg" />
-      </a>
-      <a class="logo" href="https://www.jetbrains.com/">
-        <img src="~resources/sponsors/jetbrains.svg" />
-      </a>
+        <a class="logo" href="https://digitalocean.com/">
+            <img src="~resources/sponsors/digitalocean.svg" />
+        </a>
+        <!-- <a class="logo" href="https://www.twilio.com/">
+            <img src="~resources/sponsors/twilio.svg" />
+        </a> -->
     </div>
     <div class="row center">
-      <a class="logo" href="https://www.surrey.ac.uk/department-electrical-electronic-engineering/">
-        <img src="~resources/sponsors/surrey.svg" />
+        <a class="logo" href="https://get.tech/">
+            <img src="~resources/sponsors/dot-tech.svg" />
+        </a>
+        <a class="logo" href="https://www.jetbrains.com/">
+            <img src="~resources/sponsors/jetbrains.svg" />
+        </a>
+        <a class="logo" href="https://www.surrey.ac.uk/department-electrical-electronic-engineering/">
+          <img src="~resources/sponsors/surrey.svg" />
+        </a>
+    </div>
+    <div class="row center">
+      <a class="logo" href="https://activity.ussu.co.uk/compsoc">
+        <img src="~resources/sponsors/compsoc.svg" />
       </a>
       <a class="logo" href="https://activity.ussu.co.uk/ears">
-        <img src="~resources/sponsors/ears.png" />
+        <img src="~resources/sponsors/ears.svg" />
       </a>
       <a class="logo" href="https://ussu.co.uk/">
         <img src="~resources/sponsors/union.svg" />
