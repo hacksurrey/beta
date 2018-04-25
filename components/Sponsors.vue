@@ -90,5 +90,5 @@ section
 
 img
   max-width: 400px
-  max-height: 85px
+  max-height: 80px
 </style>
