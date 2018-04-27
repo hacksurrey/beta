@@ -26,9 +26,9 @@
         <a class="logo" href="https://digitalocean.com/">
             <img src="~resources/sponsors/digitalocean.svg" />
         </a>
-        <!-- <a class="logo" href="https://www.twilio.com/">
+        <a class="logo" href="https://www.twilio.com/">
             <img src="~resources/sponsors/twilio.svg" />
-        </a> -->
+        </a>
     </div>
     <div class="row center">
         <a class="logo" href="https://get.tech/">
